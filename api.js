@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.send('hi ludo: well done');
 });
 
+app.get('/api', (req, res) => {
+  res.send('Boster');
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
