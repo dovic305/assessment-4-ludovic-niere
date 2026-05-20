@@ -11,6 +11,10 @@ app.get('/api', (req, res) => {
   res.send('Boster');
 });
 
+app.get('/api', (req, res) => {
+  res.send('new api');
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
